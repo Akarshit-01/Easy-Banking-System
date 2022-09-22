@@ -1,0 +1,251 @@
+.banner{
+    background-color: #fafafa;
+}
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: contrast(0.5);
+}
+
+.info{
+    position:absolute;
+    top: 0;
+    margin-top: 235px;
+    padding: 40px;
+    display: block;
+    background-color: #4B70E2;
+    height: 450px;
+    width: 400px;
+    margin-left: 100px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.info p{
+    padding: 10px 0 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.info h1{
+    color: white;
+    padding: 10px 0;
+    font-size: 40px;
+}
+.banner .card{
+    background-color: white;
+    width: 300px;
+    height: 180px;
+    position:absolute;
+    top: 0;
+    margin-top: 460px;
+    margin-left: 460px;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+}
+.card img{
+    width: 100px;
+    height: 100px;
+}
+.card h5{
+    white-space: pre-line;
+    margin-left: 115px;
+    position: absolute;
+    top: 0;
+    margin-top: 25px;
+    color: #4B70E2;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.banner .card1{
+    background-color: white;
+    width: 300px;
+    height: 180px;
+    position:absolute;
+    top: 0;
+    margin-top: 460px;
+    margin-left: 780px;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.card1 img{
+    width: 100px;
+    height: 100px;
+}
+.card1 h5{
+    white-space: pre-line;
+    margin-left: 125px;
+    position: absolute;
+    top: 0;
+    margin-top: 25px;
+    color: #4B70E2;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.banner .card2{
+    background-color: white;
+    width: 300px;
+    height: 180px;
+    position:absolute;
+    top: 0;
+    margin-top: 460px;
+    margin-left: 1101px;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.card2 img{
+    width: 100px;
+    height: 100px;
+}
+.card2 h5{
+    white-space: pre-line;
+    margin-left: 120px;
+    position: absolute;
+    top: 0;
+    margin-top: 28px;
+    color: #4B70E2;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.guide{
+    height: 1200px;
+    padding: 300px 230px 0;
+}
+.guide h2{  
+    color:#eeeef3;
+    font-size: 145px;
+}
+.guide p{
+    color:#4B70E2;
+    font-size: 25px;
+    padding: 0px 110px 0;
+}
+.img{
+    margin-left: 500px;
+    top: 0;
+    margin-top: 50px;
+}
+.img img{
+    height: 450px;
+    width: 90%;
+}
+.img .msg h3{
+    color:#4B70E2;
+    white-space: pre-line;
+    font-size: 40px;
+    letter-spacing: 1px;
+    
+}
+.img .msg{
+    position: absolute;
+    top: 0;
+    margin-top: 1100px;
+    left: 0;
+    margin-left: 190px;
+}
+.img .msg p{
+    color: #969696;
+    white-space: pre-line;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px 0 0;
+    font-weight: 350;
+}
+.img .msg a{
+    text-decoration: underline;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 350;
+}
+.services{
+    height:200px;
+}
+.services h2{
+    color:#eeeef3;
+    font-size: 145px;
+    padding: 0 360px 0;
+}
+.services p{
+    color:#4B70E2;
+    font-size: 25px;
+    padding: 0 362px 0;
+}
+.fond{
+    padding: 55px 0 0;
+    display: flex;
+    flex-direction: row;
+    row-gap: 15px;
+    column-gap: 28px;
+    height: 280px;
+    margin-left: 130px;
+}
+.style_prevu_kit{
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+.fond .style_prevu_kit img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.ser h2{
+    position: absolute;
+    top: 0;
+    margin-top: 170px;
+    margin-left: 50px;
+    font-size: 25px;
+    color: #eeeef3;
+    background-color: #4B70E2;
+    width: 376px;
+    padding: 0 20px 0;
+    cursor: pointer;
+    box-shadow: 0px 0px 50px #000000;
+    font-weight: 350;
+}
+.view_all{
+    height: 200px;
+}
+.view_all button{
+    margin-top: 70px;
+    margin-left: 625px;
+    width:20%;
+    background-color: #4B70E2;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 14px 0;
+    border-radius: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

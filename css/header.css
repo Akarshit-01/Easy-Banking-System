@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,"Public Sans";
+    font-weight: 200;
+	overflow-x: hidden;	
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 100%;
+	margin: auto;
+    height: 90px;
+}
+.row{
+    display: flex;
+	flex-wrap: wrap;
+}
+.v-center{
+	align-items: center;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+/* header */
+.header{
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 99;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+	background-color: white;
+}
+.header .item-left{
+	flex:0 0 17%;
+    margin-left: 30px;
+	margin-top: 5px;
+}
+.logo{
+    cursor: pointer;
+}
+.header .logo img{
+	width: 180px;
+    height: 90px;
+}
+.header .item-center{
+    display: flex;
+	flex:0 0 60%;
+    justify-content: center;
+}
+.header .item-right{
+    flex: 0 0 17%;
+    display: flex;
+	justify-content: flex-end;
+    
+}
+.header .menu .main-menu li{
+    display: inline-block;
+    line-height: 80px;
+	margin-left: 25px;
+    padding: -1px;
+}
+.header .menu .main-menu li a{
+    font-size: 1rem;
+	font-weight: 454;
+	color:#000000;
+    position:relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.header .menu > ul > li .sub-menu{
+	position: absolute;
+	z-index: 500;
+	background-color:#ffffff;
+	box-shadow: -2px 2px 70px -25px rgba(0,0,0,0.3); 
+	padding: 20px 30px;
+	transition: all 0.5s ease;
+	margin-top:25px;
+	opacity:0;
+	visibility: hidden;
+}
+.header .btn{
+	font-size: 14px;
+	color: #4B70E2;
+	border-radius: 25px;
+    border: 2px solid #4B70E2;
+    cursor: pointer;
+    font-weight: 500;
+    height: 40px;
+    width: 140px;
+    transition: color 0.3s ease;
+    background-color: white;
+	
+}
+.btn:hover{
+    color: white;
+	background-color: #4B70E2;
+	transition: 0.5s;
+
+}
+@media(min-width: 992px){
+.header .menu > ul > li.menu-item-has-children:hover .sub-menu{
+	margin-top: 0;
+	visibility: visible;
+	opacity: 1;
+}
+}
+.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li{
+   line-height: 1;
+   display: block; 
+}
+.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a {
+	padding:8px 10px;
+	display: inline-block;
+	font-size: 15px;
+	color:#555555;
+	transition: color 0.3s ease;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.header .menu > ul > li .sub-menu.mega-menu{ 
+    left: 50%;
+    transform: translateX(-50%);	
+}
+
+.header .menu > ul > li .sub-menu.mega-menu-column-3{
+  max-width: 1100px;
+  width: 100%; 	
+  display: flex;
+  flex-wrap: wrap;
+  padding:20px 25px;
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-3 > .list-item{
+  flex:0 0 25%;
+  padding:0 15px;
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-3 > .list-item .title{
+	font-size: 16px;
+	color:#4B70E2;
+	font-weight: 500;
+	line-height: 1;
+	padding: 8px 32px;
+}
+.header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a:hover,
+.header .item-right a:hover,
+.header .menu > ul > li:hover > a{
+	color:#4B70E2;
+}
+.mobile-menu-head,
+.mobile-menu-trigger{
+	display: none;
+}
+/*responsive*/
+@media(max-width: 991px){
+
+	.header .item-center{
+		order:3;
+		flex:0 0 100%;
+	}
+	.header .item-left{
+        flex:0 0 auto;
+        margin-right: 20px;
+    }
+	.header .item-right{
+		flex:0 0 auto;
+	}
+	.v-center{
+		justify-content: center;
+	}
+    .header .mobile-menu-trigger{
+		display: flex;
+		height: 30px;
+		width: 30px;
+		margin-left: 15px;
+		cursor: pointer;
+		align-items: center;
+		justify-content: center;
+    }
+	.header .mobile-menu-trigger .fas{
+		display: flex;
+		font-size: 28px;
+		position: absolute;
+	}
+	.header .item-right{
+		align-items: center;
+	}
+    .header .menu{
+		display: flex;
+		position: fixed;
+		background-color:#ffffff;
+		left:0;
+		top:0;
+		height: 100%;
+		overflow: hidden;
+		transform: translate(-100%);
+		transition: all 0.5s ease;
+		z-index: 1099;
+	}
+}

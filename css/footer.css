@@ -1,0 +1,64 @@
+body{
+    overflow-x: hidden;
+}
+.footer {
+    display: flex;
+    padding: 3vw;
+    height: auto;
+    background-color: hsl(233, 26%, 24%);
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.footerdiv a:hover{
+    color:#4B70E2
+}
+.footerdiv svg {
+    fill: white;
+    margin-left: 13px;
+    margin-top: 2px;
+}
+svg:hover {
+    cursor: pointer;
+    fill: #4B70E2;
+}
+.footerdiv .lastdiv {
+    text-align: right;
+    width: 30vw;
+}
+.footerdiv .lastdiv p {
+    padding-bottom: 0px;
+}
+.footerdiv a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footerdiv p {
+    padding-top: 5px;
+    line-height: 25px; 
+    padding-right: 5px;
+    color: hsl(233, 8%, 62%);
+}
+.lastdiv .requestbtn{
+   padding: 40px 0 0;
+}
+.lastdiv .requestbtn input[type="button"] {
+    border: 2px solid #4B70E2;
+    background-color: none;
+    color:  black;
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+.lastdiv .requestbtn input[type="button"]:hover {
+    color:#eee;
+    background-color: #4B70E2;
+}

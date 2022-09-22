@@ -1,0 +1,137 @@
+body{
+    overflow-x: hidden;
+}
+.slider{
+    width: 100%;
+    padding: 100px 0 0;
+    overflow: hidden;
+   
+}
+.slides{
+    height: 500px;
+    transition: 900ms cubic-bezier(0.48, 0.15 , 0.18, 1);  
+    position: relative;
+}
+.slide{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+ 
+}
+.slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: contrast(0.3);
+    filter: drop-shadow(0.5);
+}
+
+.slides .slide .info {
+    font-family:  "Public Sans",sans-serif;
+    position:absolute;
+    top: 0;
+    margin-top: 40px;
+    padding: 50px;
+    right: 0;
+    margin-right: 20px;
+    display: block;
+}
+.slides .slide .info h2{
+    white-space: pre-line;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+   
+}
+.slides .slide .info p{
+    white-space: pre-line;
+    font-size: 28px;
+    padding: 25px 2px 0;
+    letter-spacing: 1px;
+    font-weight: 500;
+    
+}
+.slides .slide .slider-btn{
+    border: none;
+    outline-width: 0;
+    margin-top: 25px;
+    margin-left: 180px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family:Arial;
+    font-weight: 400;
+    font-size: 14px;
+    height: 40px;
+    width: 150px;
+    transition: color 0.3s ease;
+    background-color: white;
+    opacity: 70%;
+}
+.slides .slide .slider-btn:hover{
+   background-color: #4B70E2;
+   color: white;
+   transition: 0.4s ease-out;
+}
+.next-btn,
+.prev-btn{
+    background-color: #eee;
+    opacity: 50%;
+    padding: 16px;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    cursor: pointer;
+    transition: 400ms;
+}
+.next-btn :hover,
+.prev-btn :hover{
+    color: #4B70E8;
+}
+
+.next-btn{
+    right: 0;
+}
+
+.prev-btn{
+    left: 0;
+}
+
+/*Navigation Dots */
+.navigation-dots{
+    z-index: 2;
+    position:absolute;
+    top: 555px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+.single-dot{
+    background-color: #333;
+    height: 12px;
+    width: 12px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 400ms;
+    margin:10px;
+}
+
+.single-dot.active{
+    background: #eee;
+}
+@media (max-width: 992px){
+    .slider{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .slider{
+        width: 10px;
+        height: auto;
+    }
+}

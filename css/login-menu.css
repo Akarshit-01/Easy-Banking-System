@@ -1,0 +1,93 @@
+
+.con{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+   
+}
+.dropdown-menu{
+    padding: 100px 0 0;
+    display: flex;
+    flex-direction: row;
+    height: 610px;
+    width: 250px;
+}
+
+.menu-login ul{
+	margin: 0;
+	padding:0;   
+}
+.menu-login li{
+    padding:20px 30px;
+    font-size: 18px;
+    color:#555555;
+    font-weight: 300;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px;
+}
+.dropdown-menu .menu-login a{
+    color:#555555;
+}
+.dropdown-menu .menu-login a:hover{
+    color: #4B70E2;
+    font-weight: 400;
+}
+.dropdown-menu .menu-login a.active{
+    color: #4B70E2;
+    font-weight: 400;
+}
+.deposit{ 
+    position:relative;
+    width: 500px;
+    margin-top: 125px;
+    margin-left: 300px;
+    height: 465px;
+    padding: 25px 0 0;
+    background-color: #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+}
+.deposit img{
+    margin-left: 160px;
+}
+.deposit h1{
+    color:#4B70E2;
+    padding: 0 185px 0;
+}
+    
+.deposit-form{
+    padding: 20px 170px 0;
+}
+.deposit-form input[type="text"],
+.deposit-form input[type="number"]{
+  width: calc(120% - 22px);
+  height:45px;
+  outline: none;
+  border: 3px solid #ddd;
+  padding: 0 30px;
+  border-radius: 2px;
+  color: #333;
+  font-size:0.8rem;
+  -webkit-transition:all 0.1s linear;
+  -moz-transition:all 0.1s linear;
+  transition:all 0.1s linear;
+}
+.deposit-form input:focus{
+  border-color: #358efb;
+}
+.deposit-form input[type="button"]{
+  width:100%;
+  background-color: #4B70E2;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 14px 0;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 5px;
+}
